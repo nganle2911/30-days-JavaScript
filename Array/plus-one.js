@@ -26,4 +26,23 @@ let plusOne = (digits) => {
     
 }
 
-plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]);
+let plusOne2 = (arr) => {
+    let result = arr;
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] < 9) {
+            arr[i] += 1; 
+            result = arr;
+            return result;
+        } else {
+            arr[i] = 0;
+        }
+    }
+    result.unshift(1);
+    return result;
+}
+
+console.log(plusOne2([9]));
+
+
+
+
