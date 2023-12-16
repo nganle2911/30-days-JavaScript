@@ -10,7 +10,8 @@
  * Given a roman numeral, convert it to an integer.
  */
 
-let romanToInt = (str) => {
+// TODO: Method 1: By myself 
+/* let romanToInt = (str) => {
     let result = 0;
 
     if (str.length === 1) {
@@ -88,8 +89,33 @@ let getTwoRomanNums = (romanNums) => {
     }
 
     return result;
+} */
+
+
+// TODO: Method 2: Reference from others 
+const romanNums = {
+    "I": 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+};
+
+let romanToInt = (s) => {
+    let result = 0;
+    for (let i = 0; i < s.length; i++) {
+        let current = romanNums[s[i]];
+        let next = romanNums[s[i+1]];
+
+        if (current < next) {
+            result += (next - current);
+            i++;
+        } else {
+            result += current;
+        }
+    }
+
+    return result; 
 }
-
-let str = "LVIII";
-console.log(romanToInt(str));
-
