@@ -1,4 +1,4 @@
-// Question - https://leetcode.com/problems/merge-sorted-array/description/
+// https://leetcode.com/problems/merge-sorted-array/description/
 
 let modifyArr = (arr, m) => {
     for (let i = 0; i < arr.length; i++) {

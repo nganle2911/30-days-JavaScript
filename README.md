@@ -1,5 +1,4 @@
-<center><img src="./assets/img/pic-2.png" width="70%" height="60%"></center>
-
+<img src="./assets/img/pic-2.png" width="70%" height="60%">
 
 # 30 Days of JavaScript Challenge
 
