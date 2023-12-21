@@ -14,4 +14,4 @@
 | 5   | Array | Filter elements from array | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Array/filterElementsArray.js) |
 | 6 | Array | Buy two chocolates | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Array/buyTwoChocolates.js) |
 | 7 | Array | Return length of arguments passed | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Array/returnLenOfArgsPassed.js) |
-
+| | Math | Calculator with method chaining | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Math/calculatorMethodChaining.js) |
