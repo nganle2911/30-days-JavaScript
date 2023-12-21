@@ -1,20 +1,28 @@
 // https://leetcode.com/problems/buy-two-chocolates/description/?envType=daily-question&envId=2023-12-20
 
 let buyChoco = (prices, money) => {
-    let sum = 0; 
-    let leftover = 0;
-    for (let i = 0; i < prices.length - 1; i++) {
-        sum = prices[i] + prices[i+1];
+    let sum; 
+    let minSum = Infinity; 
+    let leftover;
+    
+    for (let i = 0; i < prices.length; i++) {
+        for (let j = i + 1; j < prices.length; j++) {
+            sum = prices[i] + prices[j]; 
 
-        if (sum <= money) {
-            leftover = money - sum; 
-            break;
-        } else {
-            leftover = money;
+            if (sum < minSum) {
+                minSum = sum;
+            }
         }
     }
 
-    return leftover; 
+    leftover = money - minSum; 
+
+    if (leftover < 0) {
+        leftover = money;
+        return leftover; 
+    } else {
+        return leftover;
+    }
 }
 
-console.log(buyChoco([98,54,6,34,66,63,52,39], 62));
+console.log(buyChoco([1,2,2], 3));
