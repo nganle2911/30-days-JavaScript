@@ -16,3 +16,4 @@
 | 7 | Array | Return length of arguments passed | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Array/returnLenOfArgsPassed.js) |
 | | Math | Calculator with method chaining | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Math/calculatorMethodChaining.js) |
 | 8 | Array | Chunk array | 👉 [Click here](https://github.com/nganle2911/30-days-JavaScript/blob/main/Array/chunkArray.js) |
+| 9 | Hash Table | Happy number | 👉 [Click here]()
